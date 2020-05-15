@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel=icon href=/favicon.png>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<title>AIMNET</title>
+	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/par-style.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/jquery.mmenu.all.css" />
+	<link rel="stylesheet" href="styleswitcher/css/styleswitcher.css">
+
+	<embed src="audio/audio.mp3" width="0" height="0" loop="true" autostart="true"/>
+	
+</head>
+
+<body>
+			
+<div id="particles-js"></div>
+	<div id="preloader">
+		<div id="status">
+			<div class="status2"></div>
+		</div>
+	</div>
+
+			<div class="content container">
+		
+			<div class="wow bounceInDown" data-wow-duration="3s" data-wow-delay="1s">
+				<img src="img/logo.png" class="logo" alt="" />
+			</div>
+
+			<h1 class="text-rotator-fade wow bounceInDown" data-wow-duration="2s" data-wow-delay="1s">
+				<span class="rotate">
+					AIMNET
+				</span>
+			</h1>
+
+			<span class="link-effect wow bounceIn" data-wow-duration="2s" data-wow-delay="1.5s">
+				<i class="fa fa-arrow-left marg-right5"></i>
+				<a href="login.html">Login</a>
+			</span>
+
+
+			<i class="fa fa-dot-circle-o size wow bounceIn" data-wow-duration="2s" data-wow-delay="2.1s"></i>
+			<span class="link-effect wow bounceIn" data-wow-duration="2s" data-wow-delay="2.2s">
+				<a href="#">Download</a><i class="fa fa-arrow-right marg-left5"></i>
+			</span>
+			</div>
+
+				
+					
+	<script src="js/jquery.js"></script>
+	<script src="js/retina.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/par-scripts.js"></script>
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/jquery.mmenu.min.all.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/snap.svg-min.js"></script>
+	<script src="js/svgicons-config.js"></script>
+	<script src="js/svgicons.js"></script>
+	<script>
+		//<![CDATA[
+			(function() {
+				[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
+					var svgicon = new svgIcon( el, svgIconConfig );
+				} );
+			new svgIcon( document.querySelector( '.si-icons-hover .si-icon-hourglass' ), svgIconConfig, { easing : mina.backin, evtoggle : 'mouseover', size : { w : 80, h : 80 } } );
+			new svgIcon( document.querySelector( '.si-icons-hover .si-icon-clock' ), svgIconConfig, { easing : mina.backin, evtoggle : 'mouseover', size : { w : 80, h : 80 } } );
+			new svgIcon( document.querySelector( '.si-icons-hover .si-icon-mail' ), svgIconConfig, { easing : mina.backin, evtoggle : 'mouseover', size : { w : 80, h : 80 } } );
+			new svgIcon( document.querySelector( '.si-icons-hover .si-icon-flag' ), svgIconConfig, { easing : mina.backin, evtoggle : 'mouseover', size : { w : 80, h : 80 } } );
+		})();
+		//]]>
+	</script>
+
+	<!--Disables right click-->
+<script>
+    document.addEventListener("contextmenu", function(e){
+        e.preventDefault();
+    }, false);  
+</script>
+
+
+<!--Disables F12-->
+<script type="text/javascript">
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+
+function mischandler() {
+    return false;
+}
+
+function mousehandler(e) {
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if ((eventbutton == 2) || (eventbutton == 3)) return false;
+}
+
+document.onmousedown = function(event) {
+    event = (event || window.event);
+    if (event.keyCode == 123) {
+
+        return false;
+    }
+}
+
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+var isCtrl = false;
+document.onkeyup = function(e) {
+    if (e.which == 17)
+        isCtrl = false;
+}
+
+document.onkeydown = function(e) {
+    event = (event || window.event);
+    if (event.keyCode == 123) {
+        return false;
+    }
+    if (e.which == 17)
+        isCtrl = true;
+
+    if (((e.which == 85) || (e.which == 117) || (e.which == 65) || (e.which == 83) || (e.which == 73) || (e.which == 97) || (e.which == 67) || (e.which == 99)) && isCtrl == true) {
+        return false;
+    }
+}
+
+document.onkeypress = function(event) {
+    event = (event || window.event);
+    if (event.keyCode == 123) {
+        return false;
+    }
+}
+
+</script>
+	
+	<script src="styleswitcher/js/styleswitcher.js"></script>
+	
+	</body>
+</html>
